@@ -1,0 +1,11 @@
+version: '2'
+volumes:
+    nodered-data:
+services:
+  nodered:
+    restart: always
+    build: ./nodered
+    volumes:
+      - 'nodered-data:/data'
+    ports:
+      - "1880:1880"
