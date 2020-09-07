@@ -1,4 +1,4 @@
-FROM nodered/node-red:1.0.2
+FROM nodered/node-red:1.1.3
 
 RUN npm install node-red-contrib-influxdb \
                 node-red-node-serialport \
